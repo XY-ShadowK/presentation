@@ -1,0 +1,20 @@
+﻿  pch.cpp
+  MainFrm.cpp
+  MFCPhong.cpp
+  MFCPhongDoc.cpp
+  MFCPhongView.cpp
+  MVector.cpp
+  正在生成代码...
+C:\exchanges\code\archived\cpp\Projects\MFCPhong\MFCPhongView.cpp(86,23): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“/MFCPhongView.cpp”)
+  
+C:\exchanges\code\archived\cpp\Projects\MFCPhong\MFCPhongView.cpp(86,20): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“/MFCPhongView.cpp”)
+  
+C:\exchanges\code\archived\cpp\Projects\MFCPhong\MFCPhongView.cpp(98,22): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“/MFCPhongView.cpp”)
+  
+C:\exchanges\code\archived\cpp\Projects\MFCPhong\MFCPhongView.cpp(98,19): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“/MFCPhongView.cpp”)
+  
+  MFCPhong.vcxproj -> C:\exchanges\code\archived\cpp\Projects\MFCPhong\x64\Debug\MFCPhong.exe

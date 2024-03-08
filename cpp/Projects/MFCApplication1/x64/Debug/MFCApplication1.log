@@ -1,0 +1,26 @@
+﻿  pch.cpp
+  MainFrm.cpp
+  MFCApplication1.cpp
+  MFCApplication1Doc.cpp
+  MFCApplication1View.cpp
+  Transform.cpp
+  正在生成代码...
+C:\exchanges\code\archived\cpp\Projects\MFCApplication1\MFCApplication1View.cpp(112,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“/MFCApplication1View.cpp”)
+  
+C:\exchanges\code\archived\cpp\Projects\MFCApplication1\MFCApplication1View.cpp(129,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“/MFCApplication1View.cpp”)
+  
+C:\exchanges\code\archived\cpp\Projects\MFCApplication1\MFCApplication1View.cpp(139,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“/MFCApplication1View.cpp”)
+  
+C:\exchanges\code\archived\cpp\Projects\MFCApplication1\MFCApplication1View.cpp(149,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“/MFCApplication1View.cpp”)
+  
+C:\exchanges\code\archived\cpp\Projects\MFCApplication1\MFCApplication1View.cpp(159,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“/MFCApplication1View.cpp”)
+  
+C:\exchanges\code\archived\cpp\Projects\MFCApplication1\MFCApplication1View.cpp(169,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“/MFCApplication1View.cpp”)
+  
+  MFCApplication1.vcxproj -> C:\exchanges\code\archived\cpp\Projects\MFCApplication1\x64\Debug\MFCApplication1.exe

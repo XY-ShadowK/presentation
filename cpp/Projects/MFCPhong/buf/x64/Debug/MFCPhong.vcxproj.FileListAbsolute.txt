@@ -1,0 +1,2 @@
+E:\code\cpp\Projects\MFCPhong\x64\Debug\MFCPhong.exe
+C:\exchanges\code\archived\cpp\Projects\MFCPhong\buf\x64\Debug\MFCPhong.exe

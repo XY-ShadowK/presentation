@@ -1,0 +1,14 @@
+horseColicTraining.txt 为训练集
+horseColicTest.txt 为测试集
+train.txt 为标准化数据后训练集
+test.txt 为标准化数据后测试集
+horseColicBP.json 为本次训练完成模型的本地存档
+success_module文件夹内为已训练好的模型
+
+默认使用已训练好的模型进行预测，若想训练模型请取消以下三行注释
+241 # horseColicBP = BPNeuralNetwork()
+242 # horseColicBP.setup(21,15,1)
+243 # horseColicBP.train(sigmoid,sigmoid_derivative,train_set,train_label,5000,0.1,0.005)
+并注释以下行
+horseColicBP = BPNeuralNetwork().import_from_dict(sigmoid,sigmoid_derivative,import_module('exp1/success_module/horseColicBP.json'))
+不包含左侧标号，其为方便找到代码的行号

@@ -1,0 +1,41 @@
+setprecision(n)控制cout输出有效数字 且持续有效
+double a=1.1111111111,b=2.22222222222;
+cout<<a<<b; 输出了1.11111111112.22222222222
+cout<<setprecision(2)<<a<<b; 输出了1.12.2
+cout<<a<<" "<<b; 输出了1.1 2.2
+cout<<a<<setprecision(5)<<b 输出了1.12.2222
+当n>a的整数位数时 用小数形式输出
+当n<a的整数位数时 用科学计数法输出
+
+fixed 小数形式 持续有效
+cout<<fixed<<a<<endl; 输出1.11111 若小数位数不足自动补0
+cout<<setprecision(8)<<b<<endl; 输出2.22222222
+
+%d dec 以下均持续有效
+printf("%d",a);等价于cout<<dec<<a; 输出1
+%0 oct
+%x hex (nouppercase)
+%X hex (uppercase)
+int c=43794;
+cout<<hex<<a; 输出ab12
+cout<<uppercase<<c; 输出AB12
+
+scientific 指数形式 %e %E
+4.3794e+004
+
+取消方法
+cout.unsetf(ios::取消什么写什么);
+resetiosflags(ios::scientific); 没啥用 跟在cout里直接写一样的效果
+
+setw(n) %nd 宽度控制
+左对齐 %-nd
+left 左对齐 right 右对齐
+# 前导进制 %#0 012
+	   %#X 0x12
+showbase noshowbase 是否显示进制
+%p 地址 c++输出指针自动地址
+
+系统时间(需要windows.h) 
+SYSTEMTIME sys;
+GetLocalTime(&sys);
+sys.wYear .wMonth .wDay .wHour .wMinute .wSecond .wMilliseconds .wDayOfWeek

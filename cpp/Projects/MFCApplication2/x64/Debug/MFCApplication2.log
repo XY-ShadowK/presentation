@@ -1,0 +1,23 @@
+﻿  pch.cpp
+  MathTools.cpp
+  MainFrm.cpp
+  MFCApplication2.cpp
+C:\exchanges\code\archived\cpp\Projects\MFCApplication2\MathTools.cpp(18,25): warning C4244: “参数”: 从“double”转换到“const unsigned __int64”，可能丢失数据
+  (编译源文件“/MathTools.cpp”)
+  
+  MFCApplication2Doc.cpp
+  MFCApplication2View.cpp
+C:\exchanges\code\archived\cpp\Projects\MFCApplication2\MFCApplication2View.cpp(97,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“/MFCApplication2View.cpp”)
+  
+C:\exchanges\code\archived\cpp\Projects\MFCApplication2\MFCApplication2View.cpp(106,30): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“/MFCApplication2View.cpp”)
+  
+C:\exchanges\code\archived\cpp\Projects\MFCApplication2\MFCApplication2View.cpp(106,20): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“/MFCApplication2View.cpp”)
+  
+C:\exchanges\code\archived\cpp\Projects\MFCApplication2\MFCApplication2View.cpp(169,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  (编译源文件“/MFCApplication2View.cpp”)
+  
+  正在生成代码...
+  MFCApplication2.vcxproj -> C:\exchanges\code\archived\cpp\Projects\MFCApplication2\x64\Debug\MFCApplication2.exe

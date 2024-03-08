@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "cmath": "cpp",
+        "random": "cpp",
+        "utility": "cpp",
+        "iostream": "cpp",
+        "string": "cpp",
+        "xtr1common": "cpp",
+        "type_traits": "cpp"
+    }
+}

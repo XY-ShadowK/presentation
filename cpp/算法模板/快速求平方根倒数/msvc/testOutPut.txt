@@ -1,0 +1,52 @@
+on 64 bit
+test 0	n=26
+ans		time		
+0.195802	0
+0.196115	100
+0.196116	7500
+0.196116	0
+The fastest is method 3
+ans2:	2 same answers
+ans3:	2 same answers
+
+test 1	n=90
+ans		time		
+0.105307	0
+0.105409	0
+0.105409	100
+0.105409	0
+The fastest is method 3
+ans2:	2 same answers
+ans3:	2 same answers
+
+test 2	n=18
+ans		time		
+0.235678	100
+0.235702	100
+0.235702	0
+0.235702	0
+The fastest is method 3
+ans1:	3 same answers
+ans2:	3 same answers
+ans3:	3 same answers
+
+test 3	n=36
+ans		time		
+0.166477	0
+0.166666	0
+0.166667	100
+0.166667	0
+The fastest is method 3
+ans2:	2 same answers
+ans3:	2 same answers
+
+test 4	n=81
+ans		time		
+0.111086	0
+0.111111	100
+0.111111	100
+0.111111	100
+The fastest is method 0
+ans2:	2 same answers
+ans3:	2 same answers
+

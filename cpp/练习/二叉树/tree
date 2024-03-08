@@ -1,0 +1,166 @@
+//二叉树
+#ifndef BINARYTREE_H_
+#define BINARYTREE_H_
+#include <vector>
+using namespace std;
+
+template<typename T>
+struct BiTNode
+{
+    T data;
+    BiTNode<T>   *lchild, *rchild;
+    BiTNode(BiTNode<T>* pl = NULL, BiTNode<T>* pr = NULL)
+    {
+        lchild = pl;
+        rchild = pr;
+    }
+};
+template<typename T>
+class BiTree
+{
+public:
+    BiTree();
+    //构造函数
+    ~BiTree();
+    //析构函数
+    void PreOrderTraverse(BiTNode<T>* node);
+    //前序遍历
+    void InOrderTraverse(BiTNode<T>* node);
+    //中序遍历
+    void PostOrderTraverse(BiTNode<T>* node);
+    //后序遍历
+    void PrintNodeTraverse(BiTNode<T>* node);
+    //层次遍历
+    BiTNode<T>* GetRoot();
+
+private:
+    BiTNode<T> *m_root;                   //根节点
+    BiTNode<T> *createBiTree(T x[], int &n);           //二叉树的创建
+    void Release(BiTNode<T>* root); //二叉树的删除
+};
+template<typename T>
+BiTree<T>::BiTree()
+{
+    T ch[100];
+    cin.getline(ch, 100);
+    int num = 0;
+    m_root = createBiTree(ch,num);
+}
+template<typename T>
+BiTree<T>::~BiTree()
+{
+    Release(m_root);
+}
+
+template<typename T>
+BiTNode<T>* BiTree<T>::createBiTree(T x[], int &n)
+{
+        T ch = x[n];
+        n++;
+        if (ch == '#')
+        {
+            return NULL;
+        }
+        else
+        {
+            BiTNode<T> *Node = new BiTNode<T>;
+            Node->data = ch;
+            Node->lchild = createBiTree(x,n);
+            Node->rchild = createBiTree(x,n);
+            return Node;
+        }
+
+
+
+}
+
+template<class T>
+void BiTree<T>::Release(BiTNode<T>* root)
+{
+    if (root != NULL)
+    {
+
+        Release(root->lchild);
+        Release(root->rchild);
+        delete root;
+    }
+
+}
+
+template<class T>
+void BiTree<T>::PreOrderTraverse(BiTNode<T>* node)
+{
+
+    if (node == NULL)
+    {
+        return;
+    }
+    else
+    {
+        cout << node->data;
+        PreOrderTraverse(node->lchild);
+        PreOrderTraverse(node->rchild);
+    }
+}
+template<class T>
+void BiTree<T>::InOrderTraverse(BiTNode<T>* node)
+{
+    if (node == NULL)
+    {
+        return;
+    }
+    else
+    {
+        InOrderTraverse(node->lchild);
+        cout << node->data;
+        InOrderTraverse(node->rchild);
+    }
+}
+template<class T>
+void BiTree<T>::PostOrderTraverse(BiTNode<T>* node)
+{
+    if (node == NULL)
+    {
+        return;
+    }
+    else
+    {
+        PostOrderTraverse(node->lchild);
+        PostOrderTraverse(node->rchild);
+        cout << node->data;
+    }
+}
+
+template<class T>
+void BiTree<T>::PrintNodeTraverse(BiTNode<T>*node)
+{
+    vector<BiTNode<T>*> vec;
+    vec.push_back(node);
+    int cur = 0;                     //保存的是之前所以层的结点数
+    int last = 1;                    //加上待遍历层结点数后的总结点数
+    while (cur<vec.size())
+    {
+        last = vec.size();         //重置上一行结点数
+        while (cur<last)               //做几次是由上一层的结点数决定的
+        {
+        cout << vec[cur]->data << " "; // 访问节点
+            if (vec[cur]->lchild) // 当前访问节点的左节点不为空则压入
+                vec.push_back(vec[cur]->lchild);
+            if (vec[cur]->rchild) // 当前访问节点的右节点不为空则压入，注意左右节点的访问顺序不能颠倒
+                vec.push_back(vec[cur]->rchild);
+            cur++;
+        }
+        cout << endl;           //当cur=last时说明该层的结点已被遍历
+
+    }
+}
+
+
+
+template<class T>
+BiTNode<T>* BiTree<T>::GetRoot()
+{
+    return m_root;
+}
+
+#endif

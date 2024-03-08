@@ -1,0 +1,17 @@
+syntax on						关键字高亮
+set tabstop=4						按下TAB键跳跃4光标
+set shiftwidth=4					按下SHIFT跳4光标
+set autoindent						设置自动缩进
+set smartindent						设置智能缩进
+set number						显示行号
+set fileencodings=utf-8,gb18030,gbk,gb2312,big5		设置中文编码支持
+set background=dark					更改背景为深色
+set mouse=a						使用鼠标
+set cursorline						所在行高亮
+set autoread						自动读取文件
+set ruler						右下角显示行列
+set nobackup						覆盖文件不备份
+color desert						配色方案沙漠
+map <F9> <Esc>:w<CR> :!g++ -o %< % -lm && ./%< <CR>
+imap <F9> <Esc>:w<CR> :!g++ -o %< % -lm && ./%< <CR>
+map和imap最后两行指定编译快捷键为F9，<Esc>退出编辑进入底行模式，:w<CR>为保存文件，:!g++为底行模式调用g++编译命令，后面为g++命令的脚本参数，-o为目标文件，%<当前文件中（不含扩展名），%为当前文件全名（含扩展名），-lm为官方要求的编译参数，&&接着运行的指令，./%为编译后的程序（Linux下程序无.exe的后缀），<CR>执行命令时要按的回车。打字时请注意大小写与空格，Linux下是严格分大小写的。
